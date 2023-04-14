@@ -1,0 +1,80 @@
+/*Reset*/
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+/*NAVBAR*/
+
+.menu{
+    background-color: rgb(177, 161, 192) !important;
+}
+.opciones{
+    display: flex;
+    justify-content: end;
+}
+
+.opciones__menu li{
+    margin-left: 2rem;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: rgb(177, 161, 192);    
+}
+.footer{
+    background-color: rgba(28, 26, 31, 0.384);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+    border-radius: 5rem;
+}
+.redes{
+    margin-top: 2rem;
+}
+.redes svg{
+    color: black;
+    margin-inline: 1.5rem;
+    width: 30px;
+}
+
+
+
+/*FORMULARIO CONTACTO*/
+
+.formulario__contacto{
+    background-color: rgba(177, 161, 192, 0.384);
+    border-radius: 25px;
+    padding: 3rem;
+}
+.formulario__contacto input{
+    border-radius: 2rem;
+}
+.formulario__contacto label{
+    font-size: 25px;
+    margin-top: 2rem;
+}
+
+.nombre__apellido{
+    display: flex;    
+    justify-content: space-between;
+}
+.nombre__apellido input{
+    width: 48%;
+}
+.boton{
+    display: flex;
+    justify-content: end;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+.boton button{
+    background-color: rgba(68, 53, 82,1);
+    border: none;
+    font-size: 1.5rem;
+}
