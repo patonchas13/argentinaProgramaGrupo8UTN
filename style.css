@@ -1,3 +1,26 @@
+.container{
+    height: auto;
+}
+/*Banner-principal */
+.banner-principal{
+    background-image: url("resources/img-fondo-principal.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin: 0px;
+}
+
+/*Presentacion */
+.presentacionClass{
+    height: 400px;
+    margin: 0px;
+
+}
+
+
+
+
 /*Reset*/
 * {
     padding: 0;
