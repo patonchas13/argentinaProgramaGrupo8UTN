@@ -1,5 +1,15 @@
+body{
+    background-color: rgba(37,35,56,255);
+}
+h2,h3,p,label{
+    color: white;
+}
+
+
+
 .container{
     height: auto;
+    padding: 0px;
 }
 /*Banner-principal */
 .banner-principal{
@@ -10,12 +20,19 @@
     height: 300px;
     margin: 0px;
 }
+.formularioConcurso{
+    background-color: transparent !important;
+    padding: 0px;
+}
 
 /*Presentacion */
 .presentacionClass{
-    height: 400px;
+    height: auto;
     margin: 0px;
 
+}
+.parrafoImagen{
+    margin-bottom: 15px;
 }
 
 
@@ -32,7 +49,7 @@
 /*NAVBAR*/
 
 .menu{
-    background-color: rgb(177, 161, 192) !important;
+    background-color: rgb(148,140,154) !important;
 }
 .opciones{
     display: flex;
@@ -40,13 +57,26 @@
 }
 
 .opciones__menu li{
-    margin-left: 2rem;
+   margin-left: 5px;
+   margin-right: 5px;
+
 }
+.opciones__menu li a{
+    color: white;
+    font-size: 14px ;
+}
+.logoNav{
+    color: white;
+    margin-left: 15px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
 
 /*FOOTER*/
 
 footer{
-    background-color: rgb(177, 161, 192);    
+    background-color: rgb(148,140,154) !important;    
 }
 .footer{
     background-color: rgba(28, 26, 31, 0.384);
