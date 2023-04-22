@@ -49,7 +49,7 @@ h2,h3,p,label{
 /*NAVBAR*/
 
 .menu{
-    background-color: rgb(148,140,154) !important;
+    background-color: #083266 !important;
 }
 .opciones{
     display: flex;
@@ -76,7 +76,7 @@ h2,h3,p,label{
 /*FOOTER*/
 
 footer{
-    background-color: rgb(148,140,154) !important;    
+    background-color: #083266;    
 }
 .footer{
     background-color: rgba(28, 26, 31, 0.384);
@@ -131,3 +131,18 @@ footer{
     border: none;
     font-size: 1.5rem;
 }
+/*Carrucel de BannerFinal*/
+.btn-B{
+    background-color: #47099E;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 12px;
+}
+
+.btn-B:hover {
+    border-radius: 2px;
+  background: #F5DD64;
+  cursor: pointer;
+}
+
