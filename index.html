@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <title>Inicio</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
     <!-- Seccion del NAV -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary menu">
       <div class="container">
-          <a class="navbar-brand logoNav" href="#"><img src="C:\Users\Cinthia\Desktop\Clases en linea\Proyecto final UTN\APZ (1).png" style="width: 25%;"></a>
+          <a class="navbar-brand logoNav" href="#"><img src="resources/APZ (1).png" style="width: 25%;"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -49,20 +50,20 @@
           <section id="formulario-reclamo" class="bg-light formularioConcurso">
               <div class="container">
                   <h3 class="text-center">Animate a participar</h1>
-                  <form id="reclamo-form">
+                  <form id="concurso-form">
                       <div class="form-row">
                           <div class="form-group col-md-6">
                               <label for="nombre">Nombre</label>
-                              <input type="text" class="form-control" id="nombre" name="nombre" required>
+                              <input type="text" class="form-control" id="nombreConcurso" name="nombre" required>
                           </div>
                           <div class="form-group col-md-6">
                               <label for="apellido">Apellido</label>
-                              <input type="text" class="form-control" id="apellido" name="apellido" required>
+                              <input type="text" class="form-control" id="apellidoConcurso" name="apellido" required>
                           </div>
                       </div>
                       <div class="form-group">
                           <label for="email">Correo Electrónico</label>
-                          <input type="email" class="form-control" id="email" name="email" required>
+                          <input type="email" class="form-control" id="emailConcurso" name="email" required>
                       </div>
                       <button type="submit" class="btn btn-primary">Enviar</button>
                   </form>
@@ -86,7 +87,7 @@
   <!--Presentacion de la organizacion-->
   
   <div class="row presentacionClass" id="idOrganizacion">
-      <h2 class="col-12 py-2"><img src="C:\Users\Cinthia\Desktop\Clases en linea\Proyecto final UTN\APZsolo.png" style="width: 15%;"></h2>
+      <h2 class="col-12 py-2"><img src="/resources/APZsolo.png" style="width: 15%;"></h2>
       <div class="row parrafoImagen">
           <p class="col-6 py-4">Cras sagittis tincidunt augue, id lacinia mi varius ac. Fusce congue tellus lorem, eu pellentesque elit commodo id. Curabitur vulputate lacinia nisl ac bibendum. Cras quam libero, tincidunt non felis id, pulvinar luctus purus. Curabitur imperdiet scelerisque magna, id semper turpis mollis sed. Nunc in nisl non ipsum malesuada pharetra quis vitae elit. Quisque interdum neque ut ex commodo, tincidunt tincidunt orci vestibulum.</p>
           <img class="col-6" src="resources/img-informativa-1.jpg" alt="Imagen informativa-1">

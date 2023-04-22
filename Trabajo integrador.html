@@ -9,15 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    
     <title>Inicio</title>
-    <script src="Script.js"></script>
+    
 </head>
 <body>
   <div class="container">
     <!-- Seccion del NAV -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary menu">
       <div class="container">
-          <a class="navbar-brand logoNav" href="#">APZ</a>
+          <a class="navbar-brand logoNav" href="#"><img src="resources/APZ (1).png" style="width: 25%;"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -50,24 +52,24 @@
           <section id="formulario-concurso" class="bg-light formularioConcurso">
               <div class="container">
                   <h3 class="text-center">Animate a participar</h1>
-                  <form id="reclamo-form">
+                  <form id="concurso-form">
                       <div class="form-row">
                           <div class="form-group col-md-6">
                               <label for="nombre">Nombre</label>
-                              <input type="text" class="form-control" id="nombre" name="nombre" required>
+                              <input type="text" class="form-control" id="nombreConcurso" name="nombre" required>
                           </div>
                           <div class="form-group col-md-6">
                               <label for="apellido">Apellido</label>
-                              <input type="text" class="form-control" id="apellido" name="apellido" required>
+                              <input type="text" class="form-control" id="apellidoConcurso" name="apellido" required>
                           </div>
                       </div>
                       <div class="form-group">
                           <label for="email">Correo Electrónico</label>
-                          <input type="email" class="form-control" id="email" name="email" required>
+                          <input type="email" class="form-control" id="emailConcurso" name="email" required>
                       </div>
                       <button type="submit" class="btn btn-primary">Enviar</button>
                   </form>
-                  <div id="mensaje-exito" class="mt-3 text-center" style="display:none;">Gracias por participar, ¡mucha suerte!.</div>
+                  <div id="mensaje-exito-concurso" class="mt-3 text-center" style="display:none;">Gracias por participar, ¡mucha suerte!.</div>
               </div>
           </section>
     
@@ -94,7 +96,7 @@
         </div>
         <div class="row g-4 py-2 row-cols-1 row-cols-lg-3 offset-1">
          <div class="feature col">
-            <img class="col-sm-6" src="C:\Users\Cinthia\argentinaProgramaGrupo8UTN\argentinaProgramaGrupo8UTN-1\resources\Proyecto nuevo.jpg">
+            <img class="col-sm-6" src="resources/Proyecto nuevo.jpg">
             <p style="vertical-align: inherit;">Hay diseño y colores para</p>
             <p style="vertical-align: inherit;"> cada ocación.</p>
             <a href="#" target="_blank">Ver mas</a>
@@ -103,7 +105,7 @@
              </svg>
          </div>
            <div class="feature col">
-              <img class="col-sm-6" src="C:\Users\Cinthia\argentinaProgramaGrupo8UTN\argentinaProgramaGrupo8UTN-1\resources\Proyecto nuevo (3).jpg">
+              <img class="col-sm-6" src="resources/Proyecto nuevo (3).jpg">
               <p style="vertical-align: inherit;">Elegí el que mejor quede</p>
               <p style="vertical-align: inherit;">con tu estilo</p>
               <a href="#" target="_blank">Ver mas</a>
@@ -112,7 +114,7 @@
              </svg>
           </div>
            <div class="feature col">     
-             <img class="col-sm-6" src="C:\Users\Cinthia\argentinaProgramaGrupo8UTN\argentinaProgramaGrupo8UTN-1\resources\Proyecto nuevo (4).jpg">
+             <img class="col-sm-6" src="resources/Proyecto nuevo (4).jpg">
              <p>Son liviana y cómodas</p>
              <a href="#" target="_blank">Ver mas</a>
 
