@@ -49,6 +49,7 @@ $(document).ready(function(){
             $("#mensaje-exito-concurso").css("display","block");    
         }else{
             alert("Revisar campos del formulario de concurso: "+erroresConcurso);
+            erroresConcurso="";
         }
         
     })
@@ -83,6 +84,7 @@ $(document).ready(function(){
             $("#mensaje-exito-contacto").css("display","block");    
         }else{
             alert("Revisar campos del formulario de contacto: "+erroresContacto);
+            erroresContacto="";
         }
         
     })
@@ -114,6 +116,7 @@ $(document).ready(function(){
         }else{
             //todo: ver que hacer cuando falla
             alert("Revisar campos del formulario de reclamo: "+erroresReclamo);
+            erroresReclamo="";
         }
         
     })
