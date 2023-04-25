@@ -105,11 +105,11 @@ $(document).ready(function(){
 
     //Scripts validacion reclamo
     $("#reclamo-form").submit((event)=>{
-        event.preventDefault(); // Evitar que el formulario se envíe automáticamente
+    event.preventDefault(); // Evitar que el formulario se envíe automáticamente
         if(validarFormularioReclamo()){
-            // Limpiar el formulario
+    // Limpiar el formulario
             $("#reclamo-form").trigger('reset');
-            // Mostrar el mensaje de éxito
+    // Mostrar el mensaje de éxito
             $("#mensaje-exito-reclamo").css("display","block");    
         }else{
             //todo: ver que hacer cuando falla
@@ -187,5 +187,5 @@ $(document).ready(function(){
     $("#unite").click(function(){
       $("#suscripcion-form").slideToggle("slow");
     });
-  });
+});
 
