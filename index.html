@@ -1,165 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./resources/APZ (1).png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
     <title>Inicio</title>
+
 </head>
+
 <body>
-  <div class="container">
-    <!-- Seccion del NAV -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary menu">
-      <div class="container">
-          <a class="navbar-brand logoNav" href="#"><img src="resources/APZ (1).png" style="width: 25%;"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse opciones" id="navbarNav">
-              <ul class="navbar-nav opciones__menu">
-                  <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#idOrganizacion">Organizacion</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#idEquipo">Nuestro equipo</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="./reclamos.html">¿Tuviste algun problema?</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#idContacto">Contactanos</a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
-  <!-- Seccion banner principal-->
-  <div class="banner-principal row">
-      <div class="row col-8">
-          <h2 >Zapatillas APZ</h2>
-          <h3>Concuros cambio de temporada, Ganate 1 par de Zapatillas</h3>
-      </div>
-      <div class="col-4">
-          <section id="formulario-reclamo" class="bg-light formularioConcurso">
-              <div class="container">
-                  <h3 class="text-center">Animate a participar</h1>
-                  <form id="concurso-form">
-                      <div class="form-row">
-                          <div class="form-group col-md-6">
-                              <label for="nombre">Nombre</label>
-                              <input type="text" class="form-control" id="nombreConcurso" name="nombre" required>
-                          </div>
-                          <div class="form-group col-md-6">
-                              <label for="apellido">Apellido</label>
-                              <input type="text" class="form-control" id="apellidoConcurso" name="apellido" required>
-                          </div>
+    <main>
+        <div class="container">
+            <!-- Seccion del NAV -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary menu">
+                <div class="container">
+                    <a class="navbar-brand logoNav" href="#"><img src="resources/APZ (1).png" style="width: 25%;"></a>
+                    <button class="navbar-toggler boton-nav" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse opciones" id="navbarNav">
+                        <ul class="navbar-nav opciones__menu">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#idOrganizacion">Organizacion</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#idEquipo">Nuestro equipo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./reclamos.html">¿Tuviste algun problema?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#idContacto">Contactanos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Seccion banner principal-->
+            <div class="banner-principal row">
+                <div class="row col-md-8" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000">
+                    <div class="texto-banner">
+                        <h3>Concurso cambio de temporada <br> Ganate 1 par de Zapatillas</h3>
+                    </div>
+                </div>
+                <div class="col-md-4 formulario-sorteo" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000">
+                    <section id="formulario-concurso" class="bg-light formularioConcurso">
+                        <div class="container sorteo">
+                            <h3 class="text-center">Animate a participar</h1>
+                                <form id="concurso-form">
+                                    <div class="form-row row">
+                                        <div class="form-group col-md-6">
+                                            <label for="nombre">Nombre</label>
+                                            <input type="text" class="form-control" id="nombreConcurso" name="nombre" data-error-message="Nombre no puede estar este campo vacio ni contener numeros." required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="apellido">Apellido</label>
+                                            <input type="text" class="form-control" id="apellidoConcurso"
+                                                name="apellido" data-error-message="Apellido no puede estar este campo vacio ni contener numeros."  required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="emailConcurso" name="email"
+                                            required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </form>
+                                <div id="mensaje-exito-concurso" class="mt-3 text-center" style="display:none;">Gracias
+                                    por
+                                    participar, ¡mucha suerte!.</div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+            <!--Presentacion de la organizacion-->
+
+            <div class="row presentacionClass" id="idOrganizacion">
+                <h2 class="col-12 py-4">Zapatillas APZ</h2>
+                <div class="row parrafoImagen">
+                    <p class="col-md-6 py-md-5 textoEmpresa">Somos una marca nacional, con 10 años de experiencia, en la
+                        que apostamos al
+                        talento de manos artesanas Argentinas expertas, comenzamos como empresa enteramente familiar y
+                        poco
+                        a poco hemos crecido con la ayuda de nuestros colaboradores, quienes con pasión y dedicación se
+                        ocupan de crear los mas cómodas y hermosas zapatillas, utilizando materiales de la mas alta
+                        calidad
+                        que garantizan la durabilidad del calzado.</p>
+                    <div class="col-md-6"><img class="col-md-6 imagen-presentacion"
+                            src="resources/img-informativa-1.jpg" alt="Imagen informativa-1"></div>
+                </div>
+                <div class="row parrafoImagen">
+                    <div class="col-md-6"><img class="col-md-6 imagen-presentacion"
+                            src="resources/img-informativa-2.jpg" alt="Imagen informativa 2"></div>
+                    <p class="col-md-6 py-md-5 textoEmpresa">Entre nuestros productos podrás encontrar la mas fina
+                        mezcla de estilos, que
+                        cubren los gustos mas versátiles en zapatillas deportivas, casuales y elegantes adecuadas para
+                        todas
+                        las edades, siendo nuestro producto mas solicitado las zapatillas casuales que combinan con
+                        todo,
+                        ideales para esas ocasiones en las que se quiere compartir con amigos, ir al bar o a esa cena
+                        especial, son cómodas, frescas, duraderas y se adaptan muy bien al pie, por lo que son sin duda
+                        las
+                        favoritas de nuestros clientes.</p>
+                </div>
+            </div>
+
+            <!--Tendencias-->
+            <section class="tendencias separar">
+                <div class="row g-3 py-3 justify-content-center">
+                    <div id="tituloTend" class="col-aling-self-center">
+                        <h1 class="text-center py-4" style="color: #fefefe;">TENDENCIAS</h1>
+                    </div>
+                    <div class="row g-4 py-2 row-cols-1 row-cols-lg-3">
+                        <div class="feature col tendencias-div" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                            <img class="col-sm-6 tendencias-img" src="resources/Proyecto nuevo.jpg">
+                            <p style="vertical-align: inherit;">Hay diseño y colores para</p>
+                            <p style="vertical-align: inherit;"> cada ocación.</p>
+                            <a href="#" target="_blank">Ver mas</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z" />
+                            </svg>
+                        </div>
+                        <div class="feature col tendencias-div" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                            <img class="col-sm-6 tendencias-img" src="resources/Proyecto nuevo (3).jpg">
+                            <p style="vertical-align: inherit;">Elegí el que mejor quede</p>
+                            <p style="vertical-align: inherit;">con tu estilo.</p>
+                            <a href="#" target="_blank">Ver mas</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z" />
+                            </svg>
+                        </div>
+                        <div class="feature col tendencias-div" data-aos="fade-up"
+                            data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                            <img class="col-sm-6 tendencias-img" src="resources/Proyecto nuevo (4).jpg">
+                            <p>Son liviana y cómodas</p>
+                            <p style="vertical-align: inherit;">para usar siempre.</p>
+                            <a href="#" target="_blank">Ver mas</a>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Personal-->
+            <section class="Personal separar" id="idEquipo">
+                <div class="row g-3 py-3 justify-content-center">
+                    <div id="tituloTend" class="col-aling-self-center">
+                        <h1 class="text-center py-4 textoPersonal" style="color: #fefefe;">EQUIPO DE TRABAJO</h1>
+                        <div id="personalTable" class="personal-info" data-aos="flip-down" data-aos-duration="1500">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Seccion Contacto-->
+            <div class="row" id="contacto">
+                <div class="container mt-4" >
+                 <div class="row justify-content-center" style="height:550px;">
+                  <div class="col-md-5 py-4 maps" >
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105088.70806360725!2d-58.51990038311535!3d-34.603601982997105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca770adce275%3A0x4e2bfaece0ca4127!2sStock%20Center!5e0!3m2!1sen!2sar!4v1682211853702!5m2!1sen!2sar" width="480" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                 <div class="col-md-5">
+                  <h2 id="contH2" class="text-uppercase mt-3">CONTACTANOS</h2>
+                  <form id="contacto-form">
+                    <div class="row">
+                      <div class="col-lg-9">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="nombreContacto" placeholder="Nombre" required required data-error-message="Nombre no puede estar este campo vacio ni contener numeros.">
+                        </div>
                       </div>
+                      <div class="col-lg-9 py-2">
+                        <div class="form-group">
+                          <input type="email" class="form-control" id="emailContacto" placeholder="Email" required>
+                        </div>
+                      </div>
+                      <div class="col-9">
+                        <div class="form-group">
+                          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Mensaje" rows="3" required></textarea>
+                        </div>
+                      </div>
+                      <div class="col-9">
                       <div class="form-group">
-                          <label for="email">Correo Electrónico</label>
-                          <input type="email" class="form-control" id="emailConcurso" name="email" required>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                          <label id="check" class="form-check-label" for="invalidCheck2">
+                            Aceptar condiciones
+                          </label>
+                        </div>
                       </div>
-                      <button type="submit" class="btn btn-primary">Enviar</button>
+                      </div>
+                      <div class="col-9">
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                      </div>
+                    </div>
+                    <div id="mensaje-exito-contacto" class="mt-1 text-center" style="display:none; color: #F7DC63;">Tu formulario se envió con éxito.</div>
                   </form>
-                  <div id="mensaje-exito" class="mt-3 text-center" style="display:none;">Gracias por participar, ¡mucha suerte!.</div>
-              </div>
-          </section>
-  
-          <script>
-              // Limpiar el formulario y mostrar mensaje de éxito al enviar el formulario
-              document.getElementById("reclamo-form").addEventListener("submit", function (event) {
-                  event.preventDefault(); // Evitar que el formulario se envíe automáticamente
-                  // Limpiar el formulario
-                  document.getElementById("reclamo-form").reset();
-                  // Mostrar el mensaje de éxito
-                  document.getElementById("mensaje-exito").style.display = "block";
-              });
-          </script>
-  
-      </div>
-  </div>
-  <!--Presentacion de la organizacion-->
-  
-  <div class="row presentacionClass" id="idOrganizacion">
-      <h2 class="col-12 py-2"><img src="/resources/APZsolo.png" style="width: 15%;"></h2>
-      <div class="row parrafoImagen">
-          <p class="col-6 py-4">Cras sagittis tincidunt augue, id lacinia mi varius ac. Fusce congue tellus lorem, eu pellentesque elit commodo id. Curabitur vulputate lacinia nisl ac bibendum. Cras quam libero, tincidunt non felis id, pulvinar luctus purus. Curabitur imperdiet scelerisque magna, id semper turpis mollis sed. Nunc in nisl non ipsum malesuada pharetra quis vitae elit. Quisque interdum neque ut ex commodo, tincidunt tincidunt orci vestibulum.</p>
-          <img class="col-6" src="resources/img-informativa-1.jpg" alt="Imagen informativa-1">
-      </div>
-      <div class="row parrafoImagen">
-          <img class="col-6" src="resources/img-informativa-2.jpg" alt="Imagen informativa 2">
-          <p class="col-6 py-5">In sollicitudin feugiat congue. Ut vel tellus vel ipsum rutrum varius. Morbi ultrices auctor nunc eget pellentesque. Proin porta convallis nibh, sed malesuada mi feugiat vitae. Pellentesque at turpis ut nisi facilisis dapibus. In non risus sed tortor posuere semper. Morbi at felis laoreet lacus mattis laoreet eu vitae arcu. Nullam iaculis tortor at facilisis ultrices. In in sollicitudin quam, at rhoncus nibh. Duis dignissim gravida eros, euismod volutpat urna porttitor fermentum. Sed bibendum egestas gravida. Cras sapien leo, ornare nec sollicitudin et, tempus eget lacus.</p>
-      </div>
-  </div>
-  <!--Tendencias-->
-   <section class="Tendencias" style="background-color: #A6A6A6;">
-     <div class="row g-3 py-3 justify-content-center">
-           <div id="tituloTend" class="col-aling-self-center">
-             <h1 class="text-center py-4" style="color: #fefefe;">Tendencias</h1>
-          </div>
-          <div class="row g-4 py-2 row-cols-1 row-cols-lg-3 offset-1">
-             <div class="feature col">
-                <img class="col-sm-6" src="C:\Users\Cinthia\argentinaProgramaGrupo8UTN\argentinaProgramaGrupo8UTN-1\resources\Proyecto nuevo.jpg">
-                <p style="vertical-align: inherit;">Hay diseño y colores para</p>
-                <p style="vertical-align: inherit;"> cada ocación.</p>
-                <a href="#" target="_blank">Ver mas</a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
-                </svg>
-             </div>
-              <div class="feature col">
-                <img class="col-sm-6" src="C:\Users\Cinthia\argentinaProgramaGrupo8UTN\argentinaProgramaGrupo8UTN-1\resources\Proyecto nuevo (3).jpg">
-                <p style="vertical-align: inherit;">Elegí el que mejor quede</p>
-                <p style="vertical-align: inherit;">con tu estilo</p>
-                <a href="#" target="_blank">Ver mas</a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
-                </svg>
-             </div>
-             <div class="feature col">     
-               <img class="col-sm-6" src="C:\Users\Cinthia\argentinaProgramaGrupo8UTN\argentinaProgramaGrupo8UTN-1\resources\Proyecto nuevo (4).jpg">
-               <p>Son liviana y cómodas</p>
-               <a href="#" target="_blank">Ver mas</a>
-               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
-               <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
-               </svg>
-             </div>
-           </div>
-         </div>
-       </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-       <!---Banner final-->
-       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
+                  <div class="text-white">
+                   <h3 class="text-uppercase mt-3 font-weight-bold" id="colorH">Contactos</h3>
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                  </svg><a href="tel" id="aC"> 11 7723-0000</a><br>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                    <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+                    <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+                  </svg><a href="" id="aC"> APZ@mail.com.ar</a><br>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  </svg><a href="" id="aC"> Av. Córdoba 4619, CABA</a>
+                   <div class="my-2">
+                   <a href="" id="aC">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                      </svg>
+                   </a>
+                    <a href="" id="aC"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                     <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg>
+                   </a>
+                   <a href="" id="aC">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                      </svg>
+                   </a>
+                   </div>
+                   </div>
+                  </div>
+                 </div>
+                  </div>
+                 </div>
+                 <!---Banner Final-->
+         <div id="carouselDeBanner" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="C:\Users\Cinthia\Desktop\Clases en linea\Proyecto final UTN\Banner2.jpg" class="d-block w-100" alt="...">
+            <img src="resources\banner2.jpg" class="d-block w-100" alt="img-banner">
             <div class="carousel-caption d-none d-md-block">
               <p class="text-center" style="font-size: 4.5em; color: #47099E; align-items: center;">Arma tu estilo con APZ.</p>
-              <button class="btn-B btn-primary">Comenzar</button>
+              <button class="btn-B ">Comenzar</button>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="C:\Users\Cinthia\Desktop\Clases en linea\Proyecto final UTN\bannerFinal2.png" class="d-block w-100" alt="...">
+            <img src="resources\bannerFinal2.png" class="d-block w-100" alt="img-banner-2">
             <div class="carousel-caption d-none d-md-block">
-                <button class="btn-B btn-primary">PARTICIPAR</button>
+                <button class="btn-B" id="botonBanner2">PARTICIPAR</button>
             </div>
           </div>
         </div>
@@ -172,47 +281,70 @@
           <span class="visually-hidden">Siguiente</span>
         </button>
       </div>
+    </main>
+    <!-- Sección de Pie de pagina -->
+    <footer class="p-5">
+        <div class="container footer row-cols-lg-1">
+            <div class="redes col-6" id="redes">
+                <a style="display: inline-table; color: #E8E8E8; text-decoration: none; font-size: 12px;" class="col-2 "
+                    href="" id="aC">Terminos y condiciones</a>
+                <a style="display: inline-table; color: #E8E8E8; text-decoration: none; font-size: 12px;" class="col-1"
+                    href="" id="aC">Pagos</a>
+                <h6 style="display: inline-table; color: #E8E8E8;" class="col-1 offset-3" id="aC">REDES</h6>
+                <a href="" class="col offset-2" ><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg></a>
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg></a>
+                <a href="" >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-whatsapp"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                    </svg>
+                </a>
 
-      
-  <!-- Sección de Pie de pagina -->
-  <footer class="p-5">
-      <div class="container footer row-cols-lg-1">
-          <div class="redes col-6">
-            <a style="display: inline-table; color: #E8E8E8; text-decoration: none; font-size: 12px;" class="col-2 "href="">Terminos y condiciones</a>
-            <a style="display: inline-table; color: #E8E8E8; text-decoration: none; font-size: 12px;" class="col-1"href="">Pagos</a>
-            <h6 style="display: inline-table; color: #E8E8E8;" class="col-1 offset-3">REDES</h6>
-              <a href="" class="col offset-1"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram"
-                      viewBox="0 0 16 16">
-                      <path
-                          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                  </svg></a>
-              <a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook"
-                      viewBox="0 0 16 16">
-                      <path
-                          d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                  </svg></a>
-              <a href="">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-whatsapp"
-                      viewBox="0 0 16 16">
-                      <path
-                          d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-                  </svg>
-              </a>
-  
+            </div>
+            <hr class="col-4" style="color: #E8E8E8;">
+          <div class="row cols-lg-1">
+            <div class="col-md-6 py-3 text-center">
+                <p id="aC">APZ@mail.com.ar</p>
+            </div>
+            <div class="col-md-4">
+                <section id="formulario-susc" class="bg-light formularioSuscripcion">
+                    <div class="container">
+                        <h5 class="text-center" id="unite">Unite a nuestra comunidad</h5>
+                        <form id="suscripcion-form">
+                            <div class="form-row">
+                             <div class="col-lg-12 ms-1">
+                             <div class="form-group">
+                                <input type="email" class="formulario-susc text-center" id="emailSusc" placeholder="Email" required >
+                            </div>
+                           </div>
+                            <button type="submit" class="btnS">Suscribite</button>
+                        </form>
+                        <div id="mensaje-exito-suscripcion" class="mt-3 text-center" style="display:none;">Gracias por suscribirte.</div>
+                    </div>
+                </section>
+            </div>
           </div>
-          <hr class="col-6">
-          <div class="mt-5 text-center">
-              <p>APZ@mail.com.ar</p>
-          </div>
-      </div>
-  </footer>
-  
-  </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" 
-  integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" 
-  crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+        </div>
+    </footer>
+
+    </div>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>

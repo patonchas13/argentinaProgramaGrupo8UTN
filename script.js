@@ -1,6 +1,10 @@
 
 $(document).ready(function(){
     console.log("Iniciando scripts");
+    var erroresConcurso="";
+    var erroresContacto="";
+    var erroresReclamo="";
+
 
     //Cargado de personas
     console.log("Cargando personas");
@@ -36,6 +40,7 @@ $(document).ready(function(){
 
     //Scripts validacion concurso
     $("#concurso-form").submit((event)=>{
+      
         event.preventDefault(); // Evitar que el formulario se envíe automáticamente
         if(validarFormularioConcurso()){
             // Limpiar el formulario
@@ -43,18 +48,20 @@ $(document).ready(function(){
             // Mostrar el mensaje de éxito
             $("#mensaje-exito-concurso").css("display","block");    
         }else{
-            alert("Revisar campos del formulario de concurso");
+            alert("Revisar campos del formulario de concurso: "+erroresConcurso);
         }
         
     })
 
     function validarFormularioConcurso(){
-        let elementNombre=$("#nombreConcurso").val();
-        if(estaVacio(elementNombre) || tieneNumero(elementNombre)){
+        let elementNombre=$("#nombreConcurso");
+        if(estaVacio(elementNombre.val()) || tieneNumero(elementNombre.val())){
+            erroresConcurso+=elementNombre.attr('data-error-message');
             return false;
         }
-        let elementApellido=$("#apellidoConcurso").val();
-        if(estaVacio(elementApellido) || tieneNumero(elementApellido)){
+        let elementApellido=$("#apellidoConcurso");
+        if(estaVacio(elementApellido.val()) || tieneNumero(elementApellido.val())){
+            erroresConcurso+=elementApellido.attr('data-error-message');
             return false;
         }
         let elementEmail=$("#emailConcurso").val();
@@ -67,35 +74,32 @@ $(document).ready(function(){
 
     //Scripts validacion contacto
     $("#contacto-form").submit((event)=>{
+      
         event.preventDefault(); // Evitar que el formulario se envíe automáticamente
         if(validarFormularioContacto()){
             // Limpiar el formulario
             $("#contacto-form").trigger('reset');
             // Mostrar el mensaje de éxito
-          //  $("#mensaje-exito-concurso").css("display","block");    
+            $("#mensaje-exito-contacto").css("display","block");    
         }else{
-            alert("Revisar campos del formulario de contacto");
+            alert("Revisar campos del formulario de contacto: "+erroresContacto);
         }
         
     })
 
     function validarFormularioContacto(){
-        let elementNombre=$("#nombreContacto").val();
-        if(estaVacio(elementNombre) || tieneNumero(elementNombre)){
+        let elementNombre=$("#nombreContacto");
+        if(estaVacio(elementNombre.val()) || tieneNumero(elementNombre.val())){
+            erroresContacto+=elementNombre.attr('data-error-message');
             return false;
         }
-        let elementApellido=$("#apellidoContacto").val();
-        if(estaVacio(elementApellido) || tieneNumero(elementApellido)){
-            return false;
-        }
-        let elementEmail=$("#emailContacto").val();
-        if(!esCorreoElectronico(elementEmail)){
+        let elementEmail=$("#emailContacto");
+        if(!esCorreoElectronico(elementEmail.val())){
+            erroresContacto+=elementApellido.attr('data-error-message');
             return false;
         }
         return true;
     }
-
-
 
 
 
@@ -109,22 +113,31 @@ $(document).ready(function(){
             $("#mensaje-exito-reclamo").css("display","block");    
         }else{
             //todo: ver que hacer cuando falla
-            alert("Revisar campos del formulario de reclamo");
+            alert("Revisar campos del formulario de reclamo: "+erroresReclamo);
         }
         
     })
 
     function validarFormularioReclamo(){
-        let elementNombre=$("#nombreReclamo").val();
-        if(estaVacio(elementNombre) || tieneNumero(elementNombre)){
+        let elementNombre=$("#nombreReclamo");
+        if(estaVacio(elementNombre.val()) || tieneNumero(elementNombre.val())){
+            erroresReclamo+=elementNombre.attr('data-error-message');
             return false;
         }
-        let elementApellido=$("#apellidoReclamo").val();
-        if(estaVacio(elementApellido) || tieneNumero(elementApellido)){
+        let elementApellido=$("#apellidoReclamo");
+        if(estaVacio(elementApellido.val()) || tieneNumero(elementApellido.val())){
+            erroresReclamo+=elementApellido.attr('data-error-message');
             return false;
         }
-        let elementTipoReclamo=$("#tipo-reclamo").val();
-        if(estaVacio(elementTipoReclamo)){
+        let elementTipoReclamo=$("#tipo-reclamo");
+        if(estaVacio(elementTipoReclamo.val())){
+            erroresReclamo+=elementTipoReclamo.attr('data-error-message');
+            return false;
+        }
+
+        let elementTextArea=$("#mensaje-reclamo");
+        if(estaVacio(elementTextArea.val())){
+            erroresReclamo+=elementTextArea.attr('data-error-message');
             return false;
         }
         let elementEmail=$("#emailReclamo").val();
@@ -133,10 +146,6 @@ $(document).ready(function(){
         }
         return true;
     }
-
-
-
-
     //Utils
 
     function estaVacio(texto) {
@@ -157,4 +166,26 @@ $(document).ready(function(){
 
     console.log("Terminado scripts");
 });
+/*banner2*/
+  document.querySelector("#botonBanner2").addEventListener("click", () =>{
+    window.scrollTo({
+        top:0,
+        behavior: "smooth"
+    })
+  })
+  //Scripts validacion suscripcion
+  document.getElementById("suscripcion-form").addEventListener("submit", function (event) {
+    event.preventDefault(); 
+    document.getElementById("suscripcion-form").reset();
+    document.getElementById("mensaje-exito-suscripcion").style.display = "block";
+      });
+/*Suscripcion*/
+$(document).ready(function(){
+        $("#suscripcion-form").hide(function(){
+          $(this).hide();
+        }),
+    $("#unite").click(function(){
+      $("#suscripcion-form").slideToggle("slow");
+    });
+  });
 

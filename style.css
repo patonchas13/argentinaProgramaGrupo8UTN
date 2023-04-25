@@ -1,43 +1,3 @@
-body{
-    background-color: rgba(37,35,56,255);
-}
-h2,h3,p,label{
-    color: white;
-}
-
-
-
-.container{
-    height: auto;
-    padding: 0px;
-}
-/*Banner-principal */
-.banner-principal{
-    background-image: url("resources/img-fondo-principal.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-    margin: 0px;
-}
-.formularioConcurso{
-    background-color: transparent !important;
-    padding: 0px;
-}
-
-/*Presentacion */
-.presentacionClass{
-    height: auto;
-    margin: 0px;
-
-}
-.parrafoImagen{
-    margin-bottom: 15px;
-}
-
-
-
-
 /*Reset*/
 * {
     padding: 0;
@@ -45,11 +5,26 @@ h2,h3,p,label{
     text-decoration: none;
 }
 
+main{
+    background-color: rgba(37,35,56,255);
+}
+h2,h3,p,label{
+    color: white;
+}
+.separar {
+    
+    border-top: white 2px solid;
+}
 
+
+.container{
+    height: auto;
+    padding: 0px;
+}
 /*NAVBAR*/
 
 .menu{
-    background-color: #083266 !important;
+    background-color: rgba(37,35,56,25) !important;
 }
 .opciones{
     display: flex;
@@ -72,14 +47,147 @@ h2,h3,p,label{
     font-weight: bold;
 }
 
+li.nav-item{
+   margin-left: 4rem;
+}
+
+button.navbar-toggler {
+    background-color: white;
+}
+/*Banner-principal */
+.banner-principal{
+    background-image: url("resources/img-fondo-principal.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-attachment: fixed;
+    padding: 5rem;
+}
+.formularioConcurso{
+    background-color: transparent !important;
+    padding: 0px;
+    width: 100%;
+    
+}
+
+.texto-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.texto-banner h3 {
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+    border-radius: 2rem;
+    padding: 2rem;
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
+.col-4.formulario-sorteo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container.sorteo {
+    background-color: rgba(0,0,0,0.6);
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+button.btn.btn-primary {
+    width: 100%;
+    margin-top: 1rem;
+    background-color: rgba(37,35,56,255) !important;
+    /* color: black; */
+    border: none;
+    border-radius: 2rem;
+}
+
+
+/*Presentacion */
+.presentacionClass{
+    height: auto;
+    margin: 0px;
+    margin-bottom: 3rem;
+}
+.parrafoImagen{
+    margin-bottom: 15px;
+}
+
+/*PRESENTACION EMPRESA*/
+
+h2.col-12.py-4 {
+    text-align: center;
+    font-size: 4rem;
+}
+.row.parrafoImagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-presentacion{
+    width: 100%;
+}
+
+/*TENDENCIAS*/
+.tendencias{
+    margin-bottom: 3rem;
+}
+
+img.col-sm-6.tendencias-img {
+    width: 80%;
+}
+
+.tendencias-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*PERSONAL*/
+
+.textoPersonal{
+    color: white;
+}
+div#personalTable {
+    display: flex;
+    justify-content: center;
+}
+
+.personal-info{
+    display: flex;
+}
+div#personalTable div {
+    padding: 2rem;
+}
+div#personalTable div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#personalTable div div img{
+    border-radius: 10rem;
+    margin-bottom: 2rem;
+}
+div#personalTable div div h4{
+    color: white;
+    font-size: 1.2rem;
+}
 
 /*FOOTER*/
 
 footer{
-    background-color: #083266;    
+    background-color: rgb(111, 103, 180);
 }
+
 .footer{
-    background-color: rgba(28, 26, 31, 0.384);
+    background-color: rgb(28, 24, 65);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,45 +203,12 @@ footer{
     margin-inline: 1.5rem;
     width: 30px;
 }
-
-
-
-/*FORMULARIO CONTACTO*/
-
-.formulario__contacto{
-    background-color: rgba(177, 161, 192, 0.384);
-    border-radius: 25px;
-    padding: 3rem;
-}
-.formulario__contacto input{
-    border-radius: 2rem;
-}
-.formulario__contacto label{
-    font-size: 25px;
-    margin-top: 2rem;
-}
-
-.nombre__apellido{
-    display: flex;    
-    justify-content: space-between;
-}
-.nombre__apellido input{
-    width: 48%;
-}
-.boton{
-    display: flex;
-    justify-content: end;
-    margin-top: 1rem;
-    margin-right: 2rem;
-}
-.boton button{
-    background-color: rgba(68, 53, 82,1);
-    border: none;
-    font-size: 1.5rem;
-}
 /*Carrucel de BannerFinal*/
+#carouselDeBanner{
+     padding: 5px;
+}
 .btn-B{
-    background-color: #47099E;
+    background-color: #083266;
     width: 150px;
     height: 50px;
     border: none;
@@ -145,4 +220,147 @@ footer{
   background: #F5DD64;
   cursor: pointer;
 }
+/*Formulario de contactos*/
+#contacto{
+    margin-bottom: 6px;
+    border-radius: 50px;
+    background-color: #001930;
+    letter-spacing: 2px;
+    }
+#contacto a{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #contH2{
+    color: #fff;
+  }
+  #check{
+    color: #0986B8;
+  }
+  #aC:hover{
+    color: #F7DC63 !important;
+  }
+/*Formulario de suscripcion*/
+input.formulario-susc,
+.btnS{
+    width: 95%;
+    height: 25px;
+    border-radius: 6px;
+}
+.btnS{
+    margin: 6px;
+    border: none;
+    color: #fff;
+    background: #0870A8;
+}
+#formulario-susc{
+    border-radius: 15px;
+    color: #fff;
+    background-color: #001930 !important;
+}
 
+.btnS:hover{
+    background: #F7DC63  ;
+}
+/*RECLAMOS*/
+.titulo-reclamo{
+    color: white;
+    margin-bottom: 2rem;
+}
+
+button.btn.btn-primary.boton-reclamo {
+    background-color: rgb(69, 128, 162)!important;
+}
+
+.container.reclamo {
+    background-color: rgb(0,0,0,0.3);
+    padding: 4rem;
+    border-radius: 2rem;
+}
+
+/*RESPONSIVE CELU*/
+@media screen and (max-width: 1024px) {
+    .banner-principal.row {
+        padding: 2rem;
+    }  
+    #contacto{padding-bottom: 200px;}
+ 
+    #contacto.maps iframe{
+      width: 100%;
+      height: 700px;
+    } 
+}
+
+@media screen  and (max-width: 768px) { 
+
+    div#personalTable div {
+        padding: 0.6rem;
+    }
+    .texto-banner h3 {
+        
+        font-size: 1.4rem;
+    }
+    h3.text-center {
+        font-size: 1.1rem;
+    }
+    label {
+        font-size: 0.7rem;
+    }
+    #contacto{padding-bottom: 350px;}
+ 
+    #contacto.maps iframe{
+      width: 100%;
+      height: 850px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .logoNav {
+        width: 74%;
+    }
+    .boton-nav {
+        margin-right: 0.5rem;
+    }
+
+    .banner-principal.row {
+        padding: 1rem;
+    }
+    .banner-principal.row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .texto-banner h3 {
+        font-size: 1.3rem;
+    }
+    h3.text-center {
+        font-size: 2.2rem;
+    }
+    .container.sorteo {
+        margin-top: 3rem;
+    }
+    div#personalTable {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .row.parrafoImagen {
+        flex-direction: column;
+    }
+    .textoEmpresa {
+        text-align: center;
+    }
+    form#reclamo-form {
+        margin-inline: 2rem;
+    }
+    .container.reclamo {
+        background-color: rgba(37,35,56,255);
+        padding: 0;
+    }
+    
+    #contacto{padding-bottom: 800px;}
+    #contacto.maps iframe{
+      width: 100%;
+      height: 450px;
+    }
+}
